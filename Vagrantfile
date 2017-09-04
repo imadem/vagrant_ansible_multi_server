@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
       mgmt_config.vm.provider "virtualbox" do |vb|
         vb.memory = "512"
       end
-      mgmt_config.vm.provision :shell, path: "bootstrap-mgmt.sh"
+      mgmt_config.vm.provision :shell, path: "bootstrap.sh"
   end
 
   # create load balancer

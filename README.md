@@ -28,10 +28,10 @@ add an address below:
 2. run ab -n 1000 -c 1000 http://example.com
 
 # Monitor the load balancer in action
-Take a look at the load http://10.0.15.16:81 or http://example.com:81
+Take a look at the load in http://10.0.15.16:81 or http://example.com:81
 
 # Your task:
 1. Automate the haproxy installation.
 2. Using different workload, check the availability of the load balancer.
-3. Upload the report to your github. 
+3. Upload your report to your github space. 
 

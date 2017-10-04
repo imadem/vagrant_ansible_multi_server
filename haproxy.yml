@@ -1,0 +1,11 @@
+---
+- hosts: loadbalancer
+  sudo: yes
+  tasks:
+    - name: install haproxy
+      apt: name=haproxy update_cache=yes state=latest
+
+    - name: Enable init script
+      replace: dest='/etc/default/haproxy' 
+               regexp='ENABLED=0'
+               replace='ENABLED=1'

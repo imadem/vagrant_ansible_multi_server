@@ -1,7 +1,11 @@
+[![](https://img.shields.io/badge/SISTECH-LAB-orange.svg)](http://cs.uph.edu)
+[![](https://img.shields.io/badge/SISTECH-Software%20Engineering-green.svg)](http://cs.uph.edu)
+[![](https://img.shields.io/badge/SISTECH--UPH-Cloud%20Computing-blue.svg)](http://cs.uph.edu)
+
 # vagrant_ansible_multi_server
 Lab resource for Ansible Multiple Servers
 
-# In order to use a password less login use the command below
+# Test connection to all machines in your ansible environment
 ansible all -m ping --ask-pass
 
 the password is: vagrant

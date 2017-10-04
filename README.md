@@ -20,8 +20,18 @@ ansible-playbook haproxy.yml --ask-pass
 as root user: 
 sudo vi /etc/hosts
 
-add one line with:
+add an address below:
 10.0.15.16 example.com 
 
-#Test your load balancer using Jmeter or Tsung
+#Test your load balancer using apache2-utils
+1. Install apache2-utils : sudo apt-get install apache2-utils
+2. run ab -n 1000 -c 1000 http://example.com
+
+# Monitor the load balancer in action
+Take a look at the load http://10.0.15.16:81 or http://example.com:81
+
+# Your task:
+1. Automate the haproxy installation.
+2. Using different workload, check the availability of the load balancer.
+3. Upload the report to your github. 
 
